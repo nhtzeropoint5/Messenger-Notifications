@@ -17,8 +17,8 @@
 .container .notifications::before{
         position: absolute;
         /* position: relative; */
-        /* content: attr(data-count); */
-        content: '1';
+        content: attr(data-count);
+        /* content: '1'; */
         top:-1rem;
         right: -1rem;
         /* left: 6rem; */
@@ -31,7 +31,42 @@
         line-height: 100%;
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
         /* border: 1px solid black; */
+        opacity: 0;
+        transition: opacity 0.1s ease-out;
 
 
 }
+
+
+.notifications.add-numb::before{
+    opacity: 1;
+
+}
+
+.container .btn{
+        position: absolute;
+        left:-25px;
+        top:100px;
+        /* height:40px; */
+        width:120px;
+        color: white;
+        background: linear-gradient(#170f3e,#47379c,#170f3e);
+        /* background-color: rgb(106, 195, 106); */
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 12px;
+        border:2px solid gray;
+        border-radius: 5px;
+        line-height:20px;
+        outline: none;
+        cursor: pointer;        
+}
+
+.container .btn:hover{
+    /* background: #170f3e; */
+    box-shadow: 0 0 20px 6px rgba(49, 26, 180, 0.252)
+}
+
+
+
  /*  */
